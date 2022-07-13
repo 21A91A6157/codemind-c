@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],i,j,c=0,sum=0,n;
+    int a[100],n,i,sum=0,c,j;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -17,17 +17,16 @@ int main()
                 c++;
                 if(c==1)
                 {
-                    if(a[i]%2!=0)
+                    if(a[i]%2)
                     {
                         sum+=a[i];
                     }
                 }
-                if(j>i)
-                {
-                    a[j]=0;
-                }
+                if(j > i)
+               a[j] = 0;
             }
         }
     }
     printf("%d",sum);
 }
+        
