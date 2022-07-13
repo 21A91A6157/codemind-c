@@ -20,6 +20,6 @@ int main()
         {
             printf("%d ",a[i]);
         }
-        printf("0 ");
+        printf("0");
     }
 }
